@@ -227,10 +227,6 @@ export default function BudgetPage() {
                     <br />
                     これだけ多く貯蓄できます
                   </p>
-                  <p className="font-rounded text-xs text-white/50 mt-2">
-                    さわやかのげんこつハンバーグ{" "}
-                    {Math.floor(tenYearDiff / 2000).toLocaleString()}食分相当
-                  </p>
                 </motion.div>
               )}
 

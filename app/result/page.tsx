@@ -167,14 +167,6 @@ export default function ResultPage() {
           </Link>
         </motion.div>
 
-        <motion.p
-          className="font-rounded text-xs text-gray-400 mt-4"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-        >
-          ※このアプリは愛情と偏見でできています
-        </motion.p>
       </motion.div>
     </div>
   );

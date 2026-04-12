@@ -294,10 +294,10 @@ export default function RoomPage() {
       {showComparison && (
         <div className="text-center">
           <Link
-            href="/game"
+            href="/result"
             className="inline-block bg-kyorindo-gold text-white font-dela text-lg px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all"
           >
-            次：ミニゲームへ →
+            次：最終結果へ →
           </Link>
         </div>
       )}

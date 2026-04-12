@@ -23,18 +23,15 @@ export default function BattlePage() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <div className="inline-block bg-gray-100 text-gray-500 text-xs font-rounded px-3 py-1 rounded-full mb-3">
-          ※このデータは完全に公平です。完全に。
-        </div>
         <h1 className="font-dela text-3xl sm:text-4xl text-kyorindo-green mb-2">
-          ⚔️ 究極バトル ⚔️
+          ⚔️ 指標バトル
         </h1>
         <p className="font-rounded text-gray-600 text-sm">
           クリエイト <span className="text-gray-400">VS</span>{" "}
           <span className="text-kyorindo-green font-bold">杏林堂</span>
         </p>
         <p className="font-rounded text-xs text-gray-400 mt-1">
-          全{battleStats.length}指標で徹底比較！
+          全{battleStats.length}指標で徹底比較
         </p>
       </motion.div>
 
@@ -135,9 +132,6 @@ export default function BattlePage() {
           </p>
           <p className="font-rounded text-sm text-white/80 mb-1">
             杏林堂の完全勝利！！！
-          </p>
-          <p className="font-rounded text-xs text-white/60">
-            ※クリエイトへの敬意は忘れていません。少しだけ。
           </p>
         </motion.div>
       )}

@@ -20,8 +20,8 @@ export default function LandingPage() {
           className="flex items-center justify-center gap-4 mb-6"
           variants={staggerItem}
         >
-          {/* Create (sad) */}
-          <div className="flex flex-col items-center gap-1 opacity-50 grayscale">
+          {/* Create */}
+          <div className="flex flex-col items-center gap-1">
             <div className="w-16 h-16 bg-gray-200 rounded-2xl flex items-center justify-center text-3xl">
               🏥
             </div>
@@ -36,52 +36,30 @@ export default function LandingPage() {
             VS
           </motion.div>
 
-          {/* Kyorindo (glowing) */}
+          {/* Kyorindo */}
           <div className="flex flex-col items-center gap-1 glow-kyorindo">
             <div className="w-20 h-20 bg-gradient-to-br from-kyorindo-green to-emerald-400 rounded-2xl flex items-center justify-center text-4xl shadow-lg">
               🌿
             </div>
             <span className="font-dela text-sm text-kyorindo-green">杏林堂</span>
-            <motion.span
-              className="text-kyorindo-gold text-lg"
-              animate={{ scale: [1, 1.3, 1], rotate: [0, 10, -10, 0] }}
-              transition={{ repeat: Infinity, duration: 1.5 }}
-            >
-              ✨
-            </motion.span>
           </div>
         </motion.div>
 
         {/* Main Title */}
         <motion.h1
-          className="font-dela text-5xl sm:text-6xl text-kyorindo-green leading-tight mb-3"
+          className="font-dela text-4xl sm:text-5xl text-kyorindo-green leading-tight mb-3"
           variants={staggerItem}
-          animate={{
-            textShadow: [
-              "0 0 0px transparent",
-              "0 0 20px rgba(45,140,78,0.4)",
-              "0 0 0px transparent",
-            ],
-          }}
-          transition={{ repeat: Infinity, duration: 3 }}
         >
-          来い！
+          杏林堂 vs クリエイト
           <br />
-          <span className="text-kyorindo-gold">杏林堂</span>
+          <span className="text-2xl sm:text-3xl text-gray-600">どっちが合ってる？</span>
         </motion.h1>
 
         <motion.p
-          className="font-rounded text-gray-600 text-sm mb-1"
+          className="font-rounded text-gray-500 text-sm mb-6"
           variants={staggerItem}
         >
-          薬学部6年生へ贈る、人生最良の選択のための
-        </motion.p>
-        <motion.p
-          className="font-rounded text-xs text-gray-400 mb-6"
-          variants={staggerItem}
-        >
-          完全に公平で客観的な情報ガイド
-          <span className="ml-1 text-[10px] text-rose-400">※公平ではありません</span>
+          薬学部6年生のための就職先・居住地比較ガイド
         </motion.p>
 
         <motion.div variants={staggerItem}>
@@ -89,16 +67,9 @@ export default function LandingPage() {
             href="/battle"
             className="inline-block bg-gradient-to-r from-kyorindo-green to-emerald-500 text-white font-dela text-xl px-10 py-4 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
           >
-            診断スタート →
+            比較スタート →
           </Link>
         </motion.div>
-
-        <motion.p
-          className="font-rounded text-xs text-gray-400 mt-3"
-          variants={staggerItem}
-        >
-          ⚠️ 警告：このアプリを見た後に関東移住を選んだ人類は過去にいません
-        </motion.p>
       </motion.section>
 
       {/* Module Grid */}
@@ -122,8 +93,8 @@ export default function LandingPage() {
             <ModuleCard
               href="/battle"
               emoji="⚔️"
-              title="バトル！"
-              tagline="全指標で杏林堂が完全勝利 ※公平"
+              title="バトル比較"
+              tagline="様々な指標で2社を徹底比較"
               color="green"
             />
           </motion.div>
@@ -132,7 +103,7 @@ export default function LandingPage() {
               href="/quiz"
               emoji="🔮"
               title="就職先診断"
-              tagline="どう答えても…わかってるよね？"
+              tagline="あなたに合う薬局は？"
               color="purple"
             />
           </motion.div>
@@ -141,7 +112,7 @@ export default function LandingPage() {
               href="/budget"
               emoji="💸"
               title="家計簿シミュ"
-              tagline="関東の手取りが火を吹くぞ"
+              tagline="関東 vs 浜松 毎月の手残り比較"
               color="orange"
             />
           </motion.div>
@@ -149,8 +120,8 @@ export default function LandingPage() {
             <ModuleCard
               href="/commute"
               emoji="🚃"
-              title="満員電車RPG"
-              tagline="HP削られゲー vs HP回復ゲー"
+              title="通勤体験RPG"
+              tagline="電車通勤 vs マイカー通勤"
               color="blue"
             />
           </motion.div>
@@ -159,7 +130,7 @@ export default function LandingPage() {
               href="/future"
               emoji="🔭"
               title="10年後の未来"
-              tagline="2つの人生をリアルに見よ"
+              tagline="2つの選択、10年後はどうなる？"
               color="pink"
             />
           </motion.div>
@@ -167,8 +138,8 @@ export default function LandingPage() {
             <ModuleCard
               href="/facts"
               emoji="📊"
-              title="事実比較"
-              tagline="年間休日・有給…数字は嘘をつかない"
+              title="データ比較"
+              tagline="年間休日・有給の実際の数字"
               color="green"
             />
           </motion.div>
@@ -177,35 +148,21 @@ export default function LandingPage() {
               href="/room"
               emoji="🏠"
               title="お部屋シミュ"
-              tagline="同じ家賃で天と地の差！"
+              tagline="同じ家賃でどんな部屋に住める？"
               color="gold"
             />
           </motion.div>
           <motion.div variants={staggerItem}>
             <ModuleCard
-              href="/game"
-              emoji="🎮"
-              title="関東移住阻止！"
-              tagline="友人を引き止めろ！タップゲーム"
+              href="/result"
+              emoji="🏆"
+              title="最終結果"
+              tagline="あなたへのメッセージ"
               color="purple"
             />
           </motion.div>
         </motion.div>
       </section>
-
-      {/* Disclaimer */}
-      <motion.div
-        className="mt-8 bg-white/60 rounded-2xl p-4 text-center border border-kyorindo-light"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
-      >
-        <p className="font-rounded text-xs text-gray-500">
-          📋 免責事項：本アプリは「杏林堂に就職してほしい友達のために作られた完全に偏ったWebサービス」です。
-          <br />
-          掲載データは独自調査に基づきます。※独自調査とは「私の気持ち」です。
-        </p>
-      </motion.div>
     </div>
   );
 }

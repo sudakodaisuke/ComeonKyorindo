@@ -9,27 +9,27 @@ const factsData = [
     label: "年間休日",
     kyorindo: { value: "120日", score: 90 },
     create: { value: "117日", score: 86 },
-    note: "3日の差でも、毎年積み重なると大きい",
+    note: "3日の差。毎年積み重なると大きい",
   },
   {
     label: "有給消化率",
-    kyorindo: { value: "約80%", score: 80 },
+    kyorindo: { value: "約80%（推定16日）", score: 80 },
     create: { value: "約50%（平均11日）", score: 46 },
-    note: "「取れる休み」と「実際に取れる休み」は全然違う",
+    note: "有給は「取れる日数」より「実際に取れる日数」が大事",
   },
   {
-    label: "実質年間休暇",
-    kyorindo: { value: "140日", score: 100 },
+    label: "実質年間休暇（年間休日＋有給取得）",
+    kyorindo: { value: "136日", score: 100 },
     create: { value: "128日", score: 85 },
     note: "年間休日＋有給取得日数の合計",
   },
 ];
 
 const funFacts = [
-  { number: "12日", label: "年間の差（休暇日数）", detail: "毎年12日多く休める" },
-  { number: "360時間", label: "1年で増える自由時間", detail: "1日8時間×45日分" },
-  { number: "120回", label: "さわやかランチの回数", detail: "その12日×10回分のランチ" },
-  { number: "10年で120日", label: "累計の差", detail: "丸4ヶ月の自由時間" },
+  { number: "8日/年", label: "実質休暇の差", detail: "毎年8日多く休める" },
+  { number: "64時間/年", label: "増える自由時間", detail: "8日×8時間" },
+  { number: "10年で80日", label: "累計の差", detail: "丸2.5ヶ月分の自由時間" },
+  { number: "480時間", label: "10年間の累計", detail: "趣味・家族・自分への時間" },
 ];
 
 export default function FactsPage() {
@@ -43,13 +43,10 @@ export default function FactsPage() {
         animate={{ opacity: 1, y: 0 }}
       >
         <h1 className="font-dela text-3xl sm:text-4xl text-kyorindo-green mb-2">
-          📊 事実で比較
+          📊 データで比較
         </h1>
         <p className="font-rounded text-sm text-gray-500">
-          実際のデータで見る、休日・有給の差
-        </p>
-        <p className="font-rounded text-xs text-gray-400 mt-1">
-          ※珍しく本当のデータです
+          実際の数字で見る、休日・有給の差
         </p>
       </motion.div>
 
@@ -104,6 +101,21 @@ export default function FactsPage() {
         ))}
       </div>
 
+      {/* Detail breakdown */}
+      <motion.div
+        className="bg-kyorindo-cream rounded-2xl p-4 border border-kyorindo-light mb-6"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.6 }}
+      >
+        <p className="font-dela text-sm text-kyorindo-green mb-2">計算の根拠</p>
+        <ul className="font-rounded text-xs text-gray-600 space-y-1">
+          <li>・杏林堂：年間休日120日 ＋ 有給付与20日×消化率80% ＝ 136日</li>
+          <li>・クリエイト：年間休日117日 ＋ 有給平均取得11日 ＝ 128日</li>
+          <li>・差：8日/年（出典：各社採用情報・厚生労働省調査）</li>
+        </ul>
+      </motion.div>
+
       {/* Fun Conversions */}
       {!revealed ? (
         <motion.div
@@ -118,7 +130,7 @@ export default function FactsPage() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            この差を体感する 👀
+            年8日の差を体感する 👀
           </motion.button>
         </motion.div>
       ) : (
@@ -128,7 +140,7 @@ export default function FactsPage() {
           className="mb-6"
         >
           <h2 className="font-dela text-xl text-kyorindo-green text-center mb-4">
-            年12日の差って、実は…
+            年8日の差って、実は…
           </h2>
           <div className="grid grid-cols-2 gap-3">
             {funFacts.map((f, i) => (
@@ -145,20 +157,6 @@ export default function FactsPage() {
               </motion.div>
             ))}
           </div>
-
-          <motion.div
-            className="mt-4 bg-kyorindo-cream rounded-2xl p-4 text-center border border-kyorindo-light"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-          >
-            <p className="font-rounded text-sm text-gray-700">
-              📋 出典：各社公開の採用情報・厚生労働省調査をもとに独自集計
-            </p>
-            <p className="font-rounded text-xs text-gray-400 mt-1">
-              ※独自集計とは「私の気持ち＋実際のデータ」の融合です
-            </p>
-          </motion.div>
         </motion.div>
       )}
 

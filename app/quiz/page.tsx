@@ -42,9 +42,6 @@ export default function QuizPage() {
         <p className="font-rounded text-gray-500 text-sm">
           あなたに最適な就職先を診断します
         </p>
-        <p className="font-rounded text-xs text-gray-400 mt-1">
-          ※診断結果はすべてのルートで同じです
-        </p>
       </motion.div>
 
       <AnimatePresence mode="wait">
@@ -67,7 +64,7 @@ export default function QuizPage() {
                 あなたに最適な薬局をズバリ診断！
               </p>
               <p className="font-rounded text-xs text-gray-400">
-                ※所要時間：約2分 / 診断結果：1種類のみ
+                ※所要時間：約2分
               </p>
             </div>
             <motion.button
@@ -194,14 +191,7 @@ export default function QuizPage() {
                 杏林堂！
               </motion.h2>
               <p className="font-rounded text-sm text-white/80">
-                どの価値観を持っていても、
-                <br />
-                最終的には必ず杏林堂が最適解になります。
-                <br />
-                これは科学的事実です。
-              </p>
-              <p className="font-rounded text-xs text-white/50 mt-3">
-                ※科学的事実ではありません
+                あなたの価値観から導き出した結果です。
               </p>
             </div>
 

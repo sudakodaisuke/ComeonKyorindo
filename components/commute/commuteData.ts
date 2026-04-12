@@ -67,11 +67,11 @@ export const hamamatsuEvents: CommuteEvent[] = [
     stressChange: -15,
   },
   {
-    emoji: "🗻",
-    title: "富士山が見えた！",
-    description: "今日も雄大な富士山が。「今日も頑張ろう」という気持ちに",
-    hpChange: 15,
-    stressChange: -20,
+    emoji: "🌤️",
+    title: "今日も晴れ！",
+    description: "浜松は年間晴れ日数が多い。気持ちのいい朝のスタート",
+    hpChange: 12,
+    stressChange: -18,
   },
   {
     emoji: "☕",

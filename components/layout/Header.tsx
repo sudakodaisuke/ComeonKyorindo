@@ -11,7 +11,6 @@ const modules = [
   { path: "/future", label: "🔭" },
   { path: "/facts", label: "📊" },
   { path: "/room", label: "🏠" },
-  { path: "/game", label: "🎮" },
 ];
 
 export default function Header() {
@@ -30,7 +29,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b-2 border-kyorindo-green shadow-sm">
       <div className="max-w-2xl mx-auto px-4 py-2 flex items-center justify-between gap-2">
         <Link href="/" className="font-dela text-kyorindo-green text-sm sm:text-base whitespace-nowrap">
-          来い！杏林堂
+          杏林堂 vs クリエイト
         </Link>
 
         <div className="flex-1 max-w-xs">
