@@ -91,14 +91,14 @@ export default function ResultPage() {
           </p>
           <div className="mt-4 grid grid-cols-4 gap-2 text-sm">
             {[
-              { label: "バトル", result: "7/7勝" },
-              { label: "診断", result: "必然的" },
+              { label: "バトル", result: "4/4勝" },
+              { label: "診断", result: "杏林堂" },
               { label: "家計簿", result: "+8万/月" },
-              { label: "通勤", result: "HP+88" },
+              { label: "通勤", result: "HP+57" },
               { label: "10年後", result: "満足95点" },
-              { label: "事実", result: "休暇+12日" },
-              { label: "部屋", label2: "シミュ", result: "3倍広い" },
-              { label: "ゲーム", result: "クリア？" },
+              { label: "休暇差", result: "+8日/年" },
+              { label: "部屋", result: "3倍広い" },
+              { label: "友達", result: "いる！" },
             ].map((item) => (
               <div
                 key={item.label}
@@ -125,17 +125,23 @@ export default function ResultPage() {
             6年間、本当によく頑張ったよね。
             <br />
             <br />
-            関東も確かに魅力的。でも、あなたが育った浜松の空気、さわやかの味、富士山の景色——
-            これって、実はものすごく贅沢なことだと思う。
+            関東に出てみたい気持ち、すごくわかる。
+            でも一つだけ聞かせて——杏林堂には、あなたの友達や先輩がいるんだよ。
             <br />
             <br />
-            杏林堂で働くって、地域の誰かの「かかりつけ薬剤師」になるってこと。
+            知らない場所で、知らない人たちの中でゼロからスタートするのと、
+            知っている顔がいる職場に飛び込むのって、
+            最初の半年の気持ちが全然違うと思う。
+            困ったとき声をかけられる人が身近にいるって、それだけで全然違う。
+            <br />
+            <br />
+            杏林堂で働くって、地域の誰かの「かかりつけ薬剤師」になること。
             名前を覚えてもらって、頼ってもらって——
-            それって、都会のチェーン薬局じゃなかなか味わえない喜びだよ。
+            そういう仕事を、知ってる仲間たちと一緒にできる。
             <br />
             <br />
             <span className="text-kyorindo-green font-bold">
-              来い！杏林堂。あなたを待ってる。🌿
+              杏林堂で待ってるよ。🌿
             </span>
           </p>
           <p className="font-rounded text-xs text-gray-400 mt-4 text-right">
