@@ -101,6 +101,60 @@ export default function FactsPage() {
         ))}
       </div>
 
+      {/* Working conditions comparison */}
+      <motion.div
+        className="mb-6"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
+      >
+        <h2 className="font-dela text-lg text-kyorindo-green mb-3">働き方・待遇</h2>
+        <div className="space-y-3">
+          {[
+            {
+              label: "残業",
+              kyorindo: { text: "残業しない風潮", good: true },
+              create: { text: "店舗により常態化（早番でも閉局まで残ることも）", good: false },
+            },
+            {
+              label: "社内割引",
+              kyorindo: { text: "化粧品など20〜30%引き。日用品なども割引あり", good: true },
+              create: { text: "ほぼなし", good: false },
+            },
+            {
+              label: "試用期間",
+              kyorindo: { text: "3ヶ月", good: true },
+              create: { text: "6ヶ月", good: false },
+            },
+            {
+              label: "日曜・休日",
+              kyorindo: { text: "休日カレンダーに準じる", good: true },
+              create: { text: "日曜休みのシフトでも関係なく営業の店舗あり", good: false },
+            },
+          ].map((row, i) => (
+            <motion.div
+              key={row.label}
+              className="bg-white rounded-2xl p-4 shadow-sm"
+              initial={{ opacity: 0, x: -10 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.5 + i * 0.1 }}
+            >
+              <p className="font-dela text-xs text-gray-500 mb-2">{row.label}</p>
+              <div className="grid grid-cols-2 gap-2">
+                <div className="bg-emerald-50 rounded-xl p-3">
+                  <p className="font-rounded text-[10px] text-kyorindo-green font-bold mb-1">🌿 杏林堂</p>
+                  <p className="font-rounded text-xs text-gray-700">{row.kyorindo.text}</p>
+                </div>
+                <div className="bg-gray-50 rounded-xl p-3">
+                  <p className="font-rounded text-[10px] text-gray-400 font-bold mb-1">🏥 クリエイト</p>
+                  <p className="font-rounded text-xs text-gray-500">{row.create.text}</p>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+
       {/* Detail breakdown */}
       <motion.div
         className="bg-kyorindo-cream rounded-2xl p-4 border border-kyorindo-light mb-6"
