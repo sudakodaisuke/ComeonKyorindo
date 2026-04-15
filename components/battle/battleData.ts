@@ -65,9 +65,9 @@ export const battleStats: BattleStat[] = [
     kyorindoScore: 92,
     createScore: 20,
     kyorindoLabel: "化粧品など20〜30%引き 💄",
-    createLabel: "ほぼなし",
+    createLabel: "不明…あるといいね？",
     kyorindoNote: "薬剤師が薬局で買い物するのに割引があるのは嬉しい",
-    createNote: "社員向けの割引制度はほぼない",
+    createNote: "社割の有無は不明。ないかもしれないし、あるかも。でも杏林堂は確実にある",
     winner: "kyorindo",
   },
   {

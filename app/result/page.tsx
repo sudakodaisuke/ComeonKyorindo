@@ -135,17 +135,9 @@ export default function ResultPage() {
             困ったとき声をかけられる人が身近にいるって、それだけで全然違う。
             <br />
             <br />
-            杏林堂で働くって、地域の誰かの「かかりつけ薬剤師」になること。
-            名前を覚えてもらって、頼ってもらって——
-            そういう仕事を、知ってる仲間たちと一緒にできる。
-            <br />
-            <br />
             <span className="text-kyorindo-green font-bold">
               杏林堂で待ってるよ。🌿
             </span>
-          </p>
-          <p className="font-rounded text-xs text-gray-400 mt-4 text-right">
-            —— 偏ったアプリを作った誰かより
           </p>
         </motion.div>
 

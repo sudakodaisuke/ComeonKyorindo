@@ -119,7 +119,7 @@ export default function FactsPage() {
             {
               label: "社内割引",
               kyorindo: { text: "化粧品など20〜30%引き。日用品なども割引あり", good: true },
-              create: { text: "ほぼなし", good: false },
+              create: { text: "不明…あるといいね？（情報求む）", good: false },
             },
             {
               label: "試用期間",
