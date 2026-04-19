@@ -35,7 +35,7 @@ export const futureEvents: FutureEvent[] = [
     },
     create: {
       emoji: "🏃",
-      text: "1日で1,000人以上の患者対応。顔も覚えられない。相談できる人も近くにいない",
+      text: "大型チェーンで大量の患者対応。顔も覚えられない。相談できる人も近くにいない",
       mood: "bad",
     },
   },

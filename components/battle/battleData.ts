@@ -37,7 +37,7 @@ export const battleStats: BattleStat[] = [
     kyorindoLabel: "地元密着・顔の見える関係 👨‍⚕️",
     createLabel: "全国チェーン店舗",
     kyorindoNote: "患者さんに名前で呼ばれる関係が築ける",
-    createNote: "1日1,000人規模で個別対応は難しい",
+    createNote: "大型チェーンの宿命として個別対応は難しい",
     winner: "kyorindo",
   },
   {
