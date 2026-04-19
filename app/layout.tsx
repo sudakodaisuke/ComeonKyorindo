@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   description:
     "薬剤師就職先として杏林堂とクリエイト、浜松と関東を様々な角度から比較。あなたにとってベストな選択肢を一緒に考えます。",
   openGraph: {
-    title: "来い！杏林堂",
-    description: "公平で客観的なデータで徹底比較します。※公平ではありません",
+    title: "杏林堂 vs クリエイト — あなたに合う薬局はどっち？",
+    description: "薬剤師就職先として杏林堂とクリエイト、浜松と関東を様々な角度から比較。",
     type: "website",
   },
 };
